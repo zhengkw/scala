@@ -10,7 +10,7 @@ package com.zhengkw.scala
  */
 object CastToOther {
   def main(args: Array[String]): Unit = {
-     var a="123"
+    var a="123"
     var b=123123.123
     var c =math.Pi
     var flag=true
@@ -21,7 +21,7 @@ object CastToOther {
     println(double+s"double")
     var string:String=c.toString
     println(string)
-     println(flag)
+    println(flag)
    //源码里应该转换了大小写 统一转换为小写
     var String:String ="falSe"
     println(String.toBoolean)
