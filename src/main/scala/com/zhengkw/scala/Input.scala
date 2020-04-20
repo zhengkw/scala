@@ -7,7 +7,7 @@ import scala.io.StdIn
 /**
  * @ClassName:Input
  * @author: zhengkw
- * @description:
+ * @description: 输入一行
  * @date: 20/04/20下午 4:05
  * @version:1.0
  * @since: jdk 1.8 scala 2.11.8

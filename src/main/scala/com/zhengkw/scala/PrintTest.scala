@@ -3,7 +3,7 @@ package com.zhengkw.scala
 /**
  * @ClassName:PrintTest
  * @author: zhengkw
- * @description:
+ * @description: 输出
  * @date: 20/04/20下午 2:38
  * @version:1.0
  * @since: jdk 1.8 scala 2.11.8
