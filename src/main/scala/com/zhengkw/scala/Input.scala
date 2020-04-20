@@ -1,6 +1,7 @@
 package com.zhengkw.scala
 
-import com.sun.deploy.util.StringUtils
+import java.io.{BufferedReader, InputStreamReader}
+import java.util.Scanner
 
 import scala.io.StdIn
 
@@ -15,8 +16,26 @@ import scala.io.StdIn
 object Input {
   def main(args: Array[String]): Unit = {
     println(str)
+    println(s"---------------本初子午线str1--------------")
+    println(str1)
+    println(s"---------------本初子午线line--------------")
+    println(line)
+
+
   }
+
   //输入
   private val str: String = StdIn.readLine("请输入")
+  // java输入方法
+  //一次只能读一个字节
+  val reader = new InputStreamReader(System.in)
+  //BufferedReader(Reader)来缓存起来一次可以读一行
+  val bufferedReader = new BufferedReader(reader)
+  val str1: String = bufferedReader.readLine()
+  //方法二
+   val scanner = new Scanner(System.in)
+   println("main外面的输入提示！")
+  val line: String = scanner.nextLine()
+
 
 }
