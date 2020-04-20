@@ -17,15 +17,24 @@ object PrintTest {
     var r=math.Pi
     var s:String ="hahahaha-zhengkw"
 
+    //S插值
     println(s"$a $b $c $r $$ %% __")
+   //格式化输出 参考c语言
     printf("%d %f %d %.2f",a,b,c,r)
     println()
+   //输出一个字符串
     println(s)
+   //字符串模板/多行字符串
     println("""
               |var n7 = 2.2345678912f
               |var n8 = 2.2345678912
               |""".stripMargin)
 
+    //raw插值
+    println(raw"\t \n \r $$ ${a}")
+
+
   }
+
 
 }
