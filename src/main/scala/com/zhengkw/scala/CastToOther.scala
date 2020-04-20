@@ -22,6 +22,7 @@ object CastToOther {
     var string:String=c.toString
     println(string)
      println(flag)
+   //源码里应该转换了大小写 统一转换为小写
     var String:String ="falSe"
     println(String.toBoolean)
 
