@@ -11,8 +11,8 @@ import scala.util.control.Breaks
  */
 object ForTest {
   def main(args: Array[String]): Unit = {
-    var s="hi zhengkw where are you from"
-    for(c<-s){
+    var s="zhengkw"
+    for(c <- s){
       print(c +'\t')
     }
     println("-------1-----------")
@@ -28,9 +28,9 @@ object ForTest {
   println("--------3----------")
   //判断是偶数执行循环 循环守卫
   for(i<- 0 until 99 by 1 if i%2==0) System.out.println(i)
-
+  println("--------4----------")
  // private val str: String = StdIn.readLine()
-var str="20"
+var str="25"
   var flag=true
   Breaks.breakable{
     for(i<- 2 to str.toInt){
@@ -40,8 +40,6 @@ var str="20"
       }
     }
   }
-
   println(if(flag) str+"\t是Z数"else str+"\t is 合数")
-
 
 }
