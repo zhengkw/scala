@@ -9,8 +9,7 @@ package com.zhengkw.scala.day02
  * @since: jdk 1.8 scala 2.11.8
  */
 object ClearTest {
-  def main(args: Array[String]): Unit = {
-
+  def main(args: Array[String]) {
     printPrimeNum(2, 50)
   }
 
@@ -19,10 +18,9 @@ object ClearTest {
     var i = start
     var j = end
     while (i < j) {
-      if (isPrimeNum(i)) {
-        print(i + "\t")
-        // i += 1 //当 i=4以后无法进入 进行i++操作！陷入死循环
-      }
+      //修改为直接打印
+      if (isPrimeNum(i)) print(i + "\t")
+      // i += 1 //当 i=4以后无法进入 进行i++操作！陷入死循环
       i += 1
     }
     println() //最后换行
