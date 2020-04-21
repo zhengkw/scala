@@ -1,4 +1,5 @@
 package com.zhengkw.scala
+import scala.util.control.Breaks
 
 /**
  * @ClassName:ForTest
@@ -25,6 +26,22 @@ object ForTest {
     println(m)
   }
   println("--------3----------")
-  //判断是偶数执行循环
+  //判断是偶数执行循环 循环守卫
   for(i<- 0 until 99 by 1 if i%2==0) System.out.println(i)
+
+ // private val str: String = StdIn.readLine()
+var str="20"
+  var flag=true
+  Breaks.breakable{
+    for(i<- 2 to str.toInt){
+      if(str.toInt % i==0){
+        flag=false
+        Breaks.break
+      }
+    }
+  }
+
+  println(if(flag) str+"\t是Z数"else str+"\t is 合数")
+
+
 }
