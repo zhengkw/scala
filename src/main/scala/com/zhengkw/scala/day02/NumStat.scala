@@ -14,6 +14,7 @@ object NumStat {
   def main(args: Array[String]): Unit = {
 
     var flag = true
+   //循环输入  输入0结束
     while (flag) {
       val str = StdIn.readLine("请输入一个数,输入0结束")
       numStat(str.toInt)
