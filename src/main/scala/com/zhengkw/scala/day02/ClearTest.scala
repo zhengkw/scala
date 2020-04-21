@@ -11,7 +11,7 @@ package com.zhengkw.scala.day02
 object ClearTest {
   def main(args: Array[String]): Unit = {
 
-    printPrimeNum(2, 100)
+    printPrimeNum(2, 50)
   }
 
   //简化:Unit
@@ -21,7 +21,7 @@ object ClearTest {
     while (i < j) {
       if (isPrimeNum(i)) {
         print(i + "\t")
-        //    i += 1 //当 i=4以后无法进入 进行i++操作！陷入死循环
+        // i += 1 //当 i=4以后无法进入 进行i++操作！陷入死循环
       }
       i += 1
     }
