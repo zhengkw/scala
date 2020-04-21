@@ -25,7 +25,7 @@ object WhileTest {
       }
       i += 1
     }
-
+    println() //最后换行
   }
 
   def isPrimeNum(a: Int): Boolean = {
