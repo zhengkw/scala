@@ -5,7 +5,7 @@ import scala.io.StdIn
 /**
  * @ClassName:MultipUnicode
  * @author: zhengkw
- * @description:
+ * @description:计算传入的字符串中每个字符的 unicode 值的乘积
  * @date: 20/04/21下午 11:21
  * @version:1.0
  * @since: jdk 1.8 scala 2.11.8
@@ -15,13 +15,10 @@ object MultipUnicode {
     var flag = true
 
     while (flag) {
-      val str = StdIn.readLine("请输入一个数，输入其他字符退出")
-      try {
-        var in = str.toInt
-        multip(in, multipUnicode)
-      } catch {
-        case e => flag = false
-      }
+      println("请输入一个字符，输入0结束！")
+      val str = StdIn.readChar()
+      if (str == '0') flag = false
+      else multip(str, multipUnicode)
     }
 
   }
