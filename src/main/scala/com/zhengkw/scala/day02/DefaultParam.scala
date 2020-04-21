@@ -41,7 +41,7 @@ object DefaultParam {
 
   /**
    * @descrption:
-   * @param a     最少一个参数
+   * @param a     最少一个参数 声明可变参数a就不能赋默认值
    * @param arrys 声明可变参数！数组
    * @return: void
    * @date: 20/04/21 下午 10:20
