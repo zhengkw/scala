@@ -11,20 +11,17 @@ import scala.io.StdIn
  * @since: jdk 1.8 scala 2.11.8
  */
 object NumStat {
-  def main(args: Array[String]): Unit = {
-
+  def main(args: Array[String]) {
     var flag = true
-   //循环输入  输入0结束
+    //循环输入  输入0结束
     while (flag) {
       val str = StdIn.readLine("请输入一个数,输入0结束")
       numStat(str.toInt)
       if (str.toInt == 0) flag = false
     }
-
-
   }
 
-  def numStat(a: Int): Unit = {
+  def numStat(a: Int) {
     if (a < 0) println("signum:-1")
     else if (a == 0) println("signum:0")
     else println("signum:1")
