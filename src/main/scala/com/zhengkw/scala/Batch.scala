@@ -8,7 +8,7 @@ package com.zhengkw.scala
  * @version:1.0
  * @since: jdk 1.8 scala 2.11.8
  */
-object batch {
+object Batch {
   def main(args: Array[String]): Unit = {
 
     var m: Int =10
