@@ -1,20 +1,20 @@
 package com.zhengkw.scala.day02
 
 /**
- * @ClassName:WhileTest
+ * @ClassName:ClearTest
  * @author: zhengkw
- * @description: 用while循环输出1到100的质数
- * @date: 20/04/21下午 8:33
+ * @description: 简化WhileTest程序
+ * @date: 20/04/21下午 9:05
  * @version:1.0
  * @since: jdk 1.8 scala 2.11.8
  */
-object WhileTest {
+object ClearTest {
   def main(args: Array[String]): Unit = {
 
     printPrimeNum(2, 100)
   }
 
-  //打印出start 到 end的所有质数！
+  //打印一个
   def printPrimeNum(start: Int, end: Int): Unit = {
     var i = start
     var j = end
