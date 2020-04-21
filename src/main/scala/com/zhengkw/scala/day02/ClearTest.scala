@@ -14,8 +14,8 @@ object ClearTest {
     printPrimeNum(2, 100)
   }
 
-  //打印一个
-  def printPrimeNum(start: Int, end: Int): Unit = {
+  //简化:Unit
+  def printPrimeNum(start: Int, end: Int) {
     var i = start
     var j = end
     while (i < j) {
@@ -32,11 +32,9 @@ object ClearTest {
 
     if (a < 2) return false
     else {
-      for (i <- 2 until a) {
-        if (a % i == 0) return false
-      }
-
+      //简化成循环守卫
+      for (i <- 2 until a if a % i == 0) return false
+      true
     }
-    true
   }
 }
