@@ -11,7 +11,7 @@ package com.zhengkw.scala
 object batch {
   def main(args: Array[String]): Unit = {
 
-    var m=10
+    var m: Int =10
     var n =2
 
 
