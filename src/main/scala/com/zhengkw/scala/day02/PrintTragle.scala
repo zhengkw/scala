@@ -6,13 +6,12 @@ import scala.io.StdIn
  * @ClassName:PrintTragle
  * @author: zhengkw
  * @description:输出一个三角形
- * *
- * * *
- * * * *
- * * * * *
- * * * * * *
- * * * * * * *
- * * * * * * * *
+ *          *
+ *         * *
+ *        * * *
+ *       * * * *
+ *      * * * * *
+ *     * * * * * *
  * @date: 20/04/21下午 10:49
  * @version:1.0
  * @since: jdk 1.8 scala 2.11.8
@@ -33,6 +32,7 @@ object PrintTragle {
         }
       } catch {
         case e => flag = false
+          println("不允许输入非法参数，已退出！")
       }
     }
   }
