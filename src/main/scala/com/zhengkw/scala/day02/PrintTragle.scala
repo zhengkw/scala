@@ -6,6 +6,13 @@ import scala.io.StdIn
  * @ClassName:PrintTragle
  * @author: zhengkw
  * @description:输出一个三角形
+ * *
+ * * *
+ * * * *
+ * * * * *
+ * * * * * *
+ * * * * * * *
+ * * * * * * * *
  * @date: 20/04/21下午 10:49
  * @version:1.0
  * @since: jdk 1.8 scala 2.11.8
@@ -20,7 +27,10 @@ object PrintTragle {
         if (str.toInt > 0) {
           lineNum = str.toInt
           printTragle(lineNum)
-        } else println("已退出")
+        } else {
+          println("已退出")
+          flag = false
+        }
       } catch {
         case e => flag = false
       }
@@ -31,7 +41,7 @@ object PrintTragle {
 
   /**
    * @descrption: 打印方法
-   * @param line
+   * @param line 输入行数
    * @return: void
    * @date: 20/04/21 下午 11:52
    * @author: zhengkw
@@ -53,7 +63,6 @@ object PrintTragle {
     }
     //打印最后一行
     for (i <- 1 to line) print("* ")
-
     //打印换行为了后续继续输入
     println()
 
