@@ -23,7 +23,10 @@ object High {
    * @date: 20/04/22 上午 1:19
    * @author: zhengkw
    */
-    //如何定义被调用的函数有多个参数的高阶函数！比如eat(name,foods)
+    //如何定义被调用的函数有多个参数的高阶函数！比如
+    // student(f: String => String): Unit
+    // eat(String name,String foods)
+    //student如何去写映射关系！
   def student(f: String => String): Unit = {
     println("called student")
     println(f("cooke"))
