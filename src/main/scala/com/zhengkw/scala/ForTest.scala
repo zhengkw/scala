@@ -1,6 +1,8 @@
 package com.zhengkw.scala
 
-import scala.util.control.Breaks
+//修改全部导入
+
+import scala.util.control.Breaks._
 
 /**
  * @ClassName:ForTest
@@ -36,11 +38,12 @@ object ForTest {
   // private val str: String = StdIn.readLine()
   var str = "25"
   var flag = true
-  Breaks.breakable {
+  //去掉Breaks
+  breakable {
     for (i <- 2 to str.toInt) {
       if (str.toInt % i == 0) {
         flag = false
-        Breaks.break
+        break
       }
     }
   }
