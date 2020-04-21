@@ -20,13 +20,15 @@ object TestFor {
     }
     println(ints1)
   }
+
   /**
-  * @descrption: if的值是最后一行 for值是（） while的值是 （）
-   *
-  * @return: 
-  * @date: 20/04/22 上午 1:34
-  * @author: zhengkw
-  */
-  var a=for (i<- 1 to 100) 1
+   * @descrption: if的值是最后一行 for值是（） while的值是 （）
+   *              i to 100 range.Inclusive的集合
+   *              i util 100 range 集合
+   * @return:
+   * @date: 20/04/22 上午 1:34
+   * @author: zhengkw
+   */
+  var a = for (i <- 1 to 100) 1
   println()
 }
