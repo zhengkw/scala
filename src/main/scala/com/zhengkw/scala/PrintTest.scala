@@ -32,7 +32,14 @@ object PrintTest {
 
     //raw插值
     println(raw"\t \n \r $$ ${a}")
-
+    val sql =
+      """
+        |select
+        |    *
+        |from user
+        |where id > 10
+        |""".stripMargin
+    println(sql)
 
   }
 
