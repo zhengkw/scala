@@ -15,6 +15,8 @@ object High {
     println(option(4, 2, multiplication))
     println(option(4, 2, division))
 
+    println(option(1, 2, f))
+
   }
 
   def option(a: Int, b: Int, op: (Int, Int) => Int): Int = {
@@ -29,4 +31,6 @@ object High {
 
   def division(a: Int, b: Int) = a / b
 
+  //匿名函数
+  var f: (Int, Int) => Int = (a: Int, b: Int) => a + b
 }
