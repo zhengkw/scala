@@ -26,6 +26,8 @@ object PrintTragle {
         if (str.toInt > 0) {
           lineNum = str.toInt
           printTragle(lineNum)
+          println("--------------")
+          printTragle2(lineNum)
         } else {
           println("已退出")
           flag = false
@@ -67,4 +69,16 @@ object PrintTragle {
     println()
 
   }
+
+  def printTragle2(lines: Int): Unit = {
+    for (line <- 0 until lines) {
+      //打印空格
+      for (i <- 0 until lines - line) print(" ")
+      //打印**
+      for (i <- 0 until 2 * line + 1) print("*")
+      //换行
+      println()
+    }
+  }
+
 }
