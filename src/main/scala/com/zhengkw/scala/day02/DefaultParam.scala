@@ -11,8 +11,11 @@ package com.zhengkw.scala.day02
 object DefaultParam {
   def main(args: Array[String]): Unit = {
     println(add(2, 3))
-    println(add1(3,4))
+    println(add1(3, 4))
     println(add2(3, 3, 4, 6, 12))
+    add1(b = 20)
+   //只传第一个位置！
+    add3(2)
   }
 
   /**
@@ -49,11 +52,14 @@ object DefaultParam {
    */
   def add2(a: Int, arrys: Int*): Int = {
     var sum = a
-    for (i <- 0 until  arrys.length) {
+    for (i <- 0 until arrys.length) {
       sum += arrys(i)
     }
     sum
     //  arrys.sum+a
   }
 
+  def add3(a: Int, b: Double = 123.1): Unit = {
+
+  }
 }
