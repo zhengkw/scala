@@ -16,6 +16,10 @@ object High {
     println(option(4, 2, division))
 
     println(option(1, 2, f))
+    println(option(1, 5, (a: Int, b: Int) => a + b))
+    println(option(1, 5, (a, b) => a + b))
+    println(option(1, 5,  _+ _))
+
 
   }
 
