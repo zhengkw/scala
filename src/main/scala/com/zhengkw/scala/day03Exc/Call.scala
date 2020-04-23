@@ -17,7 +17,7 @@ object Call {
   }
 
   /**
-   * @descrption: 名调用 a: => Int 看作 a为名 T为 () =>Int的无参数匿名函数
+   * @descrption: 名调用 a: => Int  看作 以a为名以 () =>Int为Type的无参数匿名函数
    * @param a
    * @return: int
    * @date: 20/04/23 下午 10:12

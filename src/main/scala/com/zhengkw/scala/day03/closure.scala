@@ -14,7 +14,7 @@ object closure {
     //柯里化
     println(add(1)(3))
     //闭包
-    val f = test(1)
+    val f: Int => Int = test(1)
     println(f(20))
     println(f(30))
     println(f(40))
