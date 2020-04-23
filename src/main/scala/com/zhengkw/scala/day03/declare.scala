@@ -9,5 +9,14 @@ package com.zhengkw.scala.day03
  * @since: jdk 1.8 scala 2.11.8
  */
 object declare {
+  def main(args: Array[String]): Unit = {
+
+  }
+
+  def multiplication(a: Int, b: Int) = a * b
+
+  def noparam = {
+    1
+  }
 
 }
