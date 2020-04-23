@@ -31,12 +31,23 @@ object CalledName {
       a
       a
     }
-
+ /**
+ * @descrption: 斐波那契的尾递归
+ * @return: int
+ * @date: 20/04/23 下午 10:25
+ * @author: zhengkw
+ */
     def fibonacci(n: Int, f1: Int = 1, f2: Int = 1): Int = {
       if (n == 1) f1
       else fibonacci(n - 1, f2, f1 + f2)
     }
-
+  /**
+  * @descrption: 斐波那契的递归
+   * @param n 
+  * @return: int
+  * @date: 20/04/23 下午 10:25
+  * @author: zhengkw
+  */
     def fibonacci1(n: Int): Int = {
       if (n <= 2) 1
       else fibonacci1(n - 2) + fibonacci1(n - 1)
