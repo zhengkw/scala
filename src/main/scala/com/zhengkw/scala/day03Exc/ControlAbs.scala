@@ -24,6 +24,8 @@ object ControlAbs {
 
   /**
    * @descrption: 传递一段代码, 让后让这段代码, 在一个子线程中执行
+   *              这里面的控制抽象并不是threadRun！
+   *              而是code！
    * @return: void
    * @date: 20/04/23 下午 10:52
    * @author: zhengkw
