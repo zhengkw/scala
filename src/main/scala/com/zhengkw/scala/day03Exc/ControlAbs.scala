@@ -20,6 +20,11 @@ object ControlAbs {
     threadRun {
       println(Thread.currentThread().getName)
     }
+    var i = 0
+    mywhile(i < 100) {
+      println(i)
+      i += 1
+    }
   }
 
   /**
@@ -38,5 +43,24 @@ object ControlAbs {
       }
     }.start()
   }
+
+  /**
+   * @descrption: 自定义while循环
+   * @param condition 判断条件
+   * @param code      传入的代码块
+   * @return: scala.Function1<scala.runtime.BoxedUnit,scala.runtime.BoxedUnit>
+   * @date: 20/04/23 下午 11:11
+   * @author: zhengkw
+   */
+    //注意mywhile的类型必须写死！不然 mywhile会报错！
+  def mywhile(condition: => Boolean)(code: => Unit):Unit= {
+
+    if (condition) {
+      code
+      //递归执行
+      mywhile(condition)(code)
+    }
+  }
+
 
 }
