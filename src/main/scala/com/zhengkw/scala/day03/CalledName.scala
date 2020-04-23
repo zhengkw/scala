@@ -3,7 +3,7 @@ package com.zhengkw.scala.day03
 /**
  * @ClassName:CalledName
  * @author: zhengkw
- * @description:
+ * @description: 匿名函数
  * @date: 20/04/22下午 3:41
  * @version:1.0
  * @since: jdk 1.8 scala 2.11.8
