@@ -45,8 +45,8 @@ class BasePoker {
 
   def whatColor: Unit = {
     if (suit == "黑桃") println("颜色是黑色")
-    else if (suit == "梅花") println("颜色是红色")
+    else if (suit == "梅花") println("颜色是黑色")
     else if (suit == "红桃") println("颜色是红色")
-    else println("颜色是黑色")
+    else println("颜色是红色")
   }
 }
