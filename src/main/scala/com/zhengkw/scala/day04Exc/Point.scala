@@ -13,25 +13,51 @@ object Point {
     val point = new LabeledPoint("Black Thursday", 1929, 230.07)
     println(point.toString)
     println(point)
-
-    //  val dPoint = new DDPoint("Black DD", 1929, 230.07)
   }
 
+  /**
+   * @descrption: 父类point
+   * @param null
+   * @return:
+   * @date: 20/04/24 下午 9:18
+   * @author: zhengkw
+   */
   class Point() {
     var x: Double = _
     var y: Double = _
 
+    /**
+     * @descrption: 2个参数的构造器
+     * @param x
+     * @param y
+     * @return:
+     * @date: 20/04/24 下午 9:18
+     * @author: zhengkw
+     */
     def this(x: Double, y: Double) = {
       this()
       this.x = x
       this.y = y
     }
 
+    /**
+     * @descrption: 重写tostring
+     * @return: java.lang.String
+     * @date: 20/04/24 下午 9:17
+     * @author: zhengkw
+     */
     override def toString: String = {
       s"x:$x    y:$y"
     }
   }
 
+  /**
+   * @descrption: 附带打印字段 Black Thursday
+   * @param null
+   * @return:
+   * @date: 20/04/24 下午 9:17
+   * @author: zhengkw
+   */
   class LabeledPoint() extends Point {
     var local = ""
 
@@ -42,22 +68,15 @@ object Point {
       this.y = y
     }
 
+    /**
+     * @descrption: 重写tostring
+     * @return: java.lang.String
+     * @date: 20/04/24 下午 9:17
+     * @author: zhengkw
+     */
     override def toString: String = {
       s"$local    x:$x    y:$y"
     }
   }
-
-  /*class DDPoint() extends Point {
-    var local = ""
-    override var x: Double = _
-    override var y: Double = _
-
-    def this(local: String, x: Double, y: Double) {
-      this()
-      this.x = x
-      this.y = y
-      this.local = local
-    }
-  }*/
 
 }
