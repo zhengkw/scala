@@ -1,10 +1,5 @@
 package com.zhengkw.scala.day04Exc
 
-import java.util
-
-import scala.beans.BeanProperty
-import scala.collection.mutable
-
 /**
  * @ClassName:Pokder
  * @author: zhengkw

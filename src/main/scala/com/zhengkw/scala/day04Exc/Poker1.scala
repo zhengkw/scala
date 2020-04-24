@@ -8,10 +8,10 @@ package com.zhengkw.scala.day04Exc
  * @version:1.0
  * @since: jdk 1.8 scala 2.11.8
  */
-object Poker {
+object Poker1 {
 
   def main(args: Array[String]): Unit = {
-    val poker = new BasePoker
+    val poker = new BasePoker1
     println(poker.toString)
     // poker.whatColor
     poker.whetherRed
@@ -25,7 +25,7 @@ object Poker {
  * @date: 20/04/24 下午 6:19
  * @author: zhengkw
  */
-class BasePoker {
+class BasePoker1 {
   var numb: Int = _
   var suit: String = _
  //构造的时候自动生成！
