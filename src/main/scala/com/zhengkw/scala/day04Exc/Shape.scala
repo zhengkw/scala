@@ -41,6 +41,13 @@ object Shape {
     override def centerPoint: Double = row * clo
   }
 
+  /**
+   * @descrption: 圆面积
+   * @param null
+   * @return:
+   * @date: 20/04/24 下午 9:20
+   * @author: zhengkw
+   */
   class Circle extends Shape {
     var r = 0.0
 
