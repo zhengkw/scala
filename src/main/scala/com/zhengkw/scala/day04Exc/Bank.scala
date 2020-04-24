@@ -16,6 +16,13 @@ object Bank {
     println(account.balance)
   }
 
+  /**
+   * @descrption: 父类 改造了 private
+   * @param null
+   * @return:
+   * @date: 20/04/24 下午 9:20
+   * @author: zhengkw
+   */
   class BankAccount(initialBalance: Double) {
     private[day04Exc] var balance = initialBalance
 

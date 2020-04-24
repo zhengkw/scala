@@ -21,6 +21,13 @@ object Shape {
     def centerPoint: Double
   }
 
+  /**
+   * @descrption: 长方形面积打印
+   * @param null
+   * @return:
+   * @date: 20/04/24 下午 9:19
+   * @author: zhengkw
+   */
   class Rectangle extends Shape {
     var row = 0.0
     var clo = 0.0
