@@ -12,7 +12,7 @@ object Poker1 {
 
   def main(args: Array[String]): Unit = {
     val poker = new BasePoker1
-    println(poker.toString)
+    println(poker)
     // poker.whatColor
     poker.whetherRed
   }
