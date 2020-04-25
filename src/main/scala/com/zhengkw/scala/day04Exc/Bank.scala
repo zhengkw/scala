@@ -10,9 +10,10 @@ package com.zhengkw.scala.day04Exc
  */
 object Bank {
   def main(args: Array[String]): Unit = {
-    val account: BankAccount = new CheckingAccount
-    account.withdraw(10000)
-    account.deposit(2000000)
+    //val account: BankAccount = new CheckingAccount
+    val account = new CheckingAccount(2000)
+    println(account.withdraw(10000))
+    println(account.deposit(2000000))
     println(account.balance)
   }
 
@@ -37,7 +38,7 @@ object Bank {
     }
   }
 
-  class CheckingAccount extends BankAccount(0) {
+  class CheckingAccount(initialBalance: Double) extends BankAccount(initialBalance) {
     override def deposit(amount: Double) = {
       super.deposit(amount - 1.0)
 
