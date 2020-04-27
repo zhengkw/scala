@@ -10,9 +10,9 @@ package com.zhengkw.scala.day06Exc
  */
 object tuple {
   def main(args: Array[String]): Unit = {
-    val tuple1 = tuple./%(4, 2)
-    println(tuple1._1)
-    println(tuple1._2)
+    val tuple2 = tuple./%(4, 2)
+    println(tuple2._1)
+    println(tuple2._2)
   }
 
   def /%(a: Int, b: Int): (Int, Int) = {
