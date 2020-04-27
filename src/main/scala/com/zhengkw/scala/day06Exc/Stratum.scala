@@ -11,18 +11,19 @@ package com.zhengkw.scala.day06Exc
  */
 object Stratum1 {
   def main(args: Array[String]): Unit = {
-    println(5 !)
+    println(3 !)
   }
 
   implicit def int2RichInt1(i: Int): RichInt1 = new RichInt1(i)
 
   class RichInt1(i: Int) {
     def !() = {
-     // recursive(i)  未优化
+      // recursive(i)  未优化
       recursive1(i)
     }
+
     /**
-     * @descrption: 递归实现阶层
+     * @descrption: 递归实现阶乘
      * @param a
      * @return: int
      * @date: 20/04/27 下午 7:16
