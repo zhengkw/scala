@@ -10,9 +10,12 @@ package com.zhengkw.scala.day06Exc
  */
 object ArrayDemo1 {
   def main(args: Array[String]): Unit = {
+    // 调用apply的方式
+    val array1 = Array(10.0, 39, 13.4, 13, 16, 125)
+    //new 的方式
     val array = new Array[Int](10)
- /*   array(0) = 1
-    array(1) = 2*/
+    /*   array(0) = 1
+       array(1) = 2*/
     for (i <- 0 until array.length) {
       array(i) = i * i //初始化
     }
