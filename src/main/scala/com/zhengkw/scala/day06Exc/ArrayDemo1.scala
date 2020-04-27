@@ -1,5 +1,7 @@
 package com.zhengkw.scala.day06Exc
 
+import com.zhengkw.scala.day06Exc.ArrayDemo1.myPrint
+
 /**
  * @ClassName:ArrayDemo1
  * @author: zhengkw
@@ -20,6 +22,7 @@ object ArrayDemo1 {
       array(i) = i * i //初始化
     }
     myPrint(array)
+    myPrint(10 +: array)
   }
 
   def myPrint(arr: Array[_]) = {
