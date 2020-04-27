@@ -18,6 +18,7 @@ object Stratum1 {
 
   class RichInt1(i: Int) {
     def !() = {
+     // recursive(i)  未优化
       recursive1(i)
     }
     /**
