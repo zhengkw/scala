@@ -31,7 +31,7 @@ object MapDemo {
     for ((k, 98) <- map) {
       println(k)
     }
-    println("-----遍历K0-----")
+    println("-----遍历K-----")
     for ((k, _) <- map) {
       println(k)
     }
