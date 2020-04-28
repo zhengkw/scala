@@ -15,7 +15,9 @@ object FoldDemo {
     //list1.foldLeft(0)((x, y) => x + y)
     // list1.sum
     println(list1.fold(0)(_ + _))
-    println(list1.foldLeft(1)(_ * _))
+    println(list1.foldLeft(0)(_ - _))
+    println(list1.foldRight(0)(_ - _))
+
 
   }
 }
