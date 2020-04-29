@@ -8,7 +8,7 @@ package com.zhengkw.scala.day08
  * @version:1.0
  * @since: jdk 1.8 scala 2.11.8
  */
-object Ordering {
+object MyOrdering {
   def main(args: Array[String]): Unit = {
 
     val user1 = new User(23, "jack")
@@ -20,6 +20,8 @@ object Ordering {
     }
     val users = List(user1, user2, user3)
     println(users.sorted)
+    val list = users.sortBy(user => (user.age, user.name.length))(Ordering.Tuple2(Ordering.Int.reverse, Ordering.Int.reverse))
+    println(list)
   }
 }
 
