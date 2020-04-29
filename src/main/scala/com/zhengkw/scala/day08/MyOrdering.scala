@@ -20,7 +20,8 @@ object MyOrdering {
     }
     val users = List(user1, user2, user3)
     println(users.sorted)
-    val list = users.sortBy(user => (user.age, user.name.length))(Ordering.Tuple2(Ordering.Int.reverse, Ordering.Int.reverse))
+   // val list = users.sortBy(user => (user.age, user.name.length))(Ordering.Tuple2(Ordering.Int.reverse, Ordering.Int.reverse))
+    val list = users.sortBy(user => (-user.age, -user.name.length))
     println(list)
   }
 }
