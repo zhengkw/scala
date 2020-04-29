@@ -14,7 +14,7 @@ object ChangeArr12 {
     // 交换数组中前两个元素的位置
     val arr = Array(123, 24, 21, 34, 57, 77)
     arr match {
-      case sawpA(a) => println(a.toList)
+      case sawpA(a) => println(a.foreach(x => println(x)))
       case _ =>
     }
   }
